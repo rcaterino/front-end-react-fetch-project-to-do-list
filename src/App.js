@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "semantic-ui-css/semantic.min.css";
+import {
+  Container,
+  Header,
+  Button,
+  Form,
+  Divider,
+  Segment,
+} from "semantic-ui-react";
+import Footer from "./component/Footer";
+import Task from "./component/Task";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container style={{ marginTop: "3em" }}>
+        <Header as="h1">To Do List App</Header>
+        <Divider />
+        <Segment inverted>
+          <Form inverted>
+            <Form.Field>
+              <label>Usuario</label>
+              <input placeholder="Introduce tu nombre de usuario" />
+            </Form.Field>
+            <Button type="submit">Submit</Button>
+          </Form>
+        </Segment>
+
+        <Divider />
+        <Task />
+        <Footer />
+      </Container>
     </div>
   );
 }
