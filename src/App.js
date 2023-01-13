@@ -25,8 +25,17 @@ function App() {
             <Button type="submit">Submit</Button>
           </Form>
         </Segment>
+        <Segment >
+          <Form >
+            <Form.Field>
+              <label>Nueva Tarea</label>
+              <input placeholder="Escriba aqui su nueva tarea" />
+            </Form.Field>
+            <Button type="submit">Agregar</Button>
+          </Form>
+        </Segment>
 
-        <Divider />
+        
         <Task />
         <Footer />
       </Container>
