@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Grid, Header, Segment } from "semantic-ui-react";
 
-export default function () {
+export default function Footer() {
   return (
     <Segment inverted vertical style={{ padding: "5em 2em" }}>
       <Container>
@@ -16,7 +16,16 @@ export default function () {
                 durante mi participación en el Bootcamp "Fullstack Web
                 Developer" en 4Geeks Academy.
               </p>
-              <p>Para esta tarea, utilizamos la api pública <a href="https://assets.breatheco.de/apis/fake/todos/">TodoList API.</a></p>
+              <p>
+                Para esta tarea, utilizamos la api pública{" "}
+                <a
+                  href="https://assets.breatheco.de/apis/fake/todos/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  TodoList API.
+                </a>
+              </p>
             </Grid.Column>
           </Grid.Row>
         </Grid>
