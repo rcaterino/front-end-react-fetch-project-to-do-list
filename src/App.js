@@ -54,8 +54,6 @@ function App() {
         return resp.json();
       })
       .then((data) => {
-        console.log(`tareas recibidas en get:`);
-        console.log(data);
         setToDoList(data);
       })
       .catch((error) => {
@@ -75,7 +73,7 @@ function App() {
         if (resp.ok) {
           get(user)
         }
-        return resp.json;
+        return resp.json();
       })
       .then((data) => {
         console.log(data);
@@ -129,6 +127,7 @@ function App() {
     setToDoList(updatedList);
     put(updatedList);
   };
+
   return (
     <div className="App">
       <Container style={{ marginTop: "3em" }}>
